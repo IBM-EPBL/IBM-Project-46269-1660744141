@@ -1,0 +1,10 @@
+Sprint 2 - Model Building
+Tasks Completed
+  >>Importing the model building libraries
+  >>Initializing the model
+  >>Adding CNN layers
+  >>Adding dense layers
+  >>Configure the learning process
+  >>Train the model
+  >>Save the model
+  >> Test the model
