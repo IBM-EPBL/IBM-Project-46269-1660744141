@@ -1,0 +1,10 @@
+Sprint 1 - Data  collection and Image Preeprocessing
+TASKS COMPLETED:
+
+  Data Collection:
+    >>Dataset downloaded
+    
+   Image Preprocessing:
+     >>ImageDataGenerator class imported
+     >>ImageDataGenerator class configured
+     >>ImageDataGenerator functionality applied to Test and train dataset.
