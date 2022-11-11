@@ -1,0 +1,31 @@
+<html lang="en" dir="ltr">
+<head>
+<style>
+	body{
+		background-image: url('https://img.freepik.com/premium-photo/tropical-fruits-background-with-copyspace-left_23-2147822402.jpg?w=1060');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+</style>
+		<meta charset="utf-8">
+		<title>Nutrition Image Analysis</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+	    
+		<!-- Result -->
+		<div class="results">
+		        <p style="padding-top: 150px; color:blue;text-align: center;">
+					<h1 style="color:blue;font-size:xx-large;text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Fruit Classified is: </h1>
+						<b><h2 style="color:red;text-align: center;font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><u>{{showcase1}}</u></b></h2>
+							<br><h3 style="color:black;text-align: center;width: 58%;margin-left: 20%;font-size: larger;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{showcase}}</h3></p>
+		</div>
+		<br>
+		<br>
+       
+    </div>
+	</body>
+</html>

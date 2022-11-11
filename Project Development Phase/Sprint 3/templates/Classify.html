@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{   margin: 0;
+                overflow:hidden;
+                background-color: #333;
+                background-image: url("https://img.freepik.com/premium-photo/tropical-fruits-background-with-copyspace-left_23-2147822402.jpg?w=1060");
+                background-size: cover;
+                
+            }
+            
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(157, 237, 157, 0.834)
+        }
+        li{
+            float: right;
+            
+        }
+        li a{
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        p{
+            left: 50%;
+        }
+        
+    </style>
+</head>
+<script>
+  function preview() {
+    frame.src=URL.createObjectURL(event.target.files[0]);
+}
+
+    $(document).ready(function() {
+          $('#clear_button').on('click', function() {
+              $('#image').val('');
+              $('#frame').attr('src',"");
+            });
+        });
+
+</script>
+
+<script>
+  function preview() {
+    frame.src=URL.createObjectURL(event.target.files[0]);
+}
+
+    $(document).ready(function() {
+          $('#clear_button').on('click', function() {
+              $('#image').val('');
+              $('#frame').attr('src',"");
+            });
+        });
+
+</script>
+
+<body>
+
+<body background = "C:\Users\Siva\Desktop\Project IBM\Flask\bg.jpg ">
+<ul>
+    <li style="font-size: x-large;"><a link rel="Home" href="Home.html">Home</a></li>
+  
+    <li style="float: left; font-size: xx-large;font-weight: bold;"><a href="#title">Nutrition Image Analysis</a></li>
+</ul>
+<section id="content">
+
+        <div class="left">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+        <label style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">SELECT AN IMAGE :</label>
+        <input id="image" type="file" name="image" accept="image/png, image/jpeg" onchange="preview()"><br><br>
+          <img id="frame" src="" width="250px" height="250px"/>
+          <div class="buttons_div">
+            <button type="submit" class="btn btn-dark" id="predict_button" style="width: fit-content;font-size: large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color: lightcyan;border-color: white;" >Submit</button>
+            <button type="button" class="btn btn-dark" id="clear_button" style="font-size: large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color: lightcyan;border-color: white;">&nbsp Clear &nbsp</button>
+          </div>
+        </form>
+        </div>
+  </section>
+</body>
+</html>
